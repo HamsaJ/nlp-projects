@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jama/Desktop/work/nlp/lab/mlruns/0/30171e00f6e042c7afdd5624eaec02c8/artifacts
+end_time: 1601206641165
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 30171e00f6e042c7afdd5624eaec02c8
+run_uuid: 30171e00f6e042c7afdd5624eaec02c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1601206453750
+status: 3
+tags: []
+user_id: jama
