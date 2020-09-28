@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jama/Desktop/work/nlp/lab/mlruns/0/596eaedc06734a02a06b7993848288dd/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 596eaedc06734a02a06b7993848288dd
+run_uuid: 596eaedc06734a02a06b7993848288dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1601299085261
+status: 1
+tags: []
+user_id: hitechml
