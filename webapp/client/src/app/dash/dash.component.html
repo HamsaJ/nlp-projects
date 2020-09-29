@@ -1,36 +1,56 @@
 <!--dash.component.html-->
 <div class="grid-container">
   <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+  <mat-grid-list cols="{{ (cardLayout | async)?.columns }}" rowHeight="200px">
     <!--Mini Cards-->
-    <mat-grid-tile *ngFor="let i of [1, 2, 3, 4]" [colspan]="( cardLayout | async )?.miniCard.cols"
-      [rowspan]="( cardLayout | async )?.miniCard.rows">
-      <app-card title="Card {{i}}"><div>Mini Card Content Here</div></app-card>
+    <mat-grid-tile
+      *ngFor="let i of [1, 2, 3, 4]"
+      [colspan]="(cardLayout | async)?.miniCard.cols"
+      [rowspan]="(cardLayout | async)?.miniCard.rows"
+    >
+      <app-card title="Card {{ i }}"
+        ><div>Mini Card Content Here</div></app-card
+      >
     </mat-grid-tile>
     <!--Charts-->
-    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.chart.cols"
+      [rowspan]="(cardLayout | async)?.chart.rows"
+    >
       <app-card title="Monthly Revenue">
-          <app-annual-sales-chart></app-annual-sales-chart>
+        <app-annual-sales-chart></app-annual-sales-chart>
       </app-card>
-   </mat-grid-tile>
-   <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.chart.cols"
+      [rowspan]="(cardLayout | async)?.chart.rows"
+    >
       <app-card title="Product Sales">
-          <app-product-sales-chart></app-product-sales-chart>
+        <app-product-sales-chart></app-product-sales-chart>
       </app-card>
-   </mat-grid-tile>
-   <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.chart.cols"
+      [rowspan]="(cardLayout | async)?.chart.rows"
+    >
       <app-card title="Sales by Traffic Source">
-          <app-sales-traffic-chart></app-sales-traffic-chart>
+        <app-sales-traffic-chart></app-sales-traffic-chart>
       </app-card>
-   </mat-grid-tile>
-   <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+    </mat-grid-tile>
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.chart.cols"
+      [rowspan]="(cardLayout | async)?.chart.rows"
+    >
       <app-card title="Online Store Sessions by Traffic Source">
-          <app-store-sessions-chart></app-store-sessions-chart>
+        <app-store-sessions-chart></app-store-sessions-chart>
       </app-card>
-   </mat-grid-tile>
+    </mat-grid-tile>
     <!--Table-->
-    <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.table.cols"
+      [rowspan]="(cardLayout | async)?.table.rows"
+    >
       <app-card title="Card 9"><div>Table Content Here</div></app-card>
     </mat-grid-tile>
   </mat-grid-list>
- </div>
+</div>

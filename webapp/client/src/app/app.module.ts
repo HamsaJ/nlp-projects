@@ -16,12 +16,16 @@ import { MatListModule } from '@angular/material/list';
 import { DashComponent } from './dash/dash.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { CardComponent } from './card/card.component';
 import { ProductSalesChartComponent } from './charts/product-sales-chart/product-sales-chart.component';
 import { SalesTrafficChartComponent } from './charts/sales-traffic-chart/sales-traffic-chart.component';
 import { AnnualSalesChartComponent } from './charts/annual-sales-chart/annual-sales-chart.component';
 import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store-sessions-chart.component';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UploadService } from './upload.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store
     ProductSalesChartComponent,
     SalesTrafficChartComponent,
     AnnualSalesChartComponent,
-    StoreSessionsChartComponent
+    StoreSessionsChartComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,9 +52,15 @@ import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
+    MatProgressBarModule,
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [UploadService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
