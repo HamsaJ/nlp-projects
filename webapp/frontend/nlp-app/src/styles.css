@@ -1,0 +1,12 @@
+.btn{
+    margin: 5px;
+}
+
+.result-table {
+    height:250px;
+    overflow-y: scroll;
+}
+
+.data-input {
+    height:250px;
+}
