@@ -92,8 +92,3 @@ class RESTCountriesComponent(object):
         attribute, we can refer to the Token's 'is_country' attribute here,
         which is already set in the processing step."""
         return any([t._.get('is_country') for t in tokens])
-
-def get_sentiment_analysis(text):
-    # Text classification - sentiment analysis
-    nlp = pipeline("sentiment-analysis")
-    return nlp(text)
