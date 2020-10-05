@@ -42,7 +42,6 @@
         </tr>
       </thead>
       <tbody *ngIf="isPositive">
-        <div>It is positive</div>
         <tr *ngFor="let r of result" class="alert alert-success">
           <td>{{ r.label }}</td>
           <td>{{ r.score }}</td>

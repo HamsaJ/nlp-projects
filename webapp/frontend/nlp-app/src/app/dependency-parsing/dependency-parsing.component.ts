@@ -14,7 +14,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 })
 export class DependencyParsingComponent implements OnInit {
   ngOnInit() {}
-  endpoint = "http://localhost:8000/api/dependency";
+  endpoint = "http://localhost:8000/nlp/dependency";
   headers = { "Content-Type": "application/json" };
   data: any;
   result: any;
@@ -41,15 +41,15 @@ export class DependencyParsingComponent implements OnInit {
 
   sendText() {
     console.log("sending request", {
-      data: this.data.trim(),
+      text: this.data.trim(),
     });
     this.httpClient
       .post(this.endpoint, {
-        data: this.data,
+        text: this.data,
       })
       .subscribe((result: any[]) => {
         if (result.length !== 0) {
-          this.result = Array.from(result["response"]["body"]["dependency"]);
+          this.result = Array.from(result["dependency"]);
           this.found = true;
           console.log(this.result);
         }

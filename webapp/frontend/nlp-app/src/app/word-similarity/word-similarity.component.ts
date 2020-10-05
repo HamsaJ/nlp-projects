@@ -14,7 +14,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 })
 export class WordSimilarityComponent implements OnInit {
   ngOnInit() {}
-  endpoint = "http://localhost:8000/api/wordsim";
+  endpoint = "http://localhost:8000/nlp/wordsim";
   headers = { "Content-Type": "application/json" };
   data: any;
   result: any;
@@ -41,17 +41,15 @@ export class WordSimilarityComponent implements OnInit {
 
   sendText() {
     console.log("sending request", {
-      data: this.data.trim(),
+      text: this.data.trim(),
     });
     this.httpClient
       .post(this.endpoint, {
-        data: this.data,
+        text: this.data,
       })
       .subscribe((result: any[]) => {
         if (result.length !== 0) {
-          this.result = Array.from(
-            result["response"]["body"]["wordSimilarity"]
-          );
+          this.result = Array.from(result["wordSimilarity"]);
           this.found = true;
           console.log(this.result);
         }

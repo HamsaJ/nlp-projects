@@ -1,29 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder, Validators} from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import * as io from 'socket.io-client';
-import { SocketService } from './socket.service'
+import { Component, OnInit } from "@angular/core";
+import {
+  FormControl,
+  FormGroup,
+  FormBuilder,
+  Validators,
+} from "@angular/forms";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    
-  }
-  title = 'NLP2GO';
+  ngOnInit(): void {}
+  title = "NLP-LAB";
 
   constructor() {
     try {
-      var url = 'http://localhost:8000';
-      var socket: SocketIOClient.Socket; 
-      socket = io(url);
-      socket.emit('new-message', "Hello world");
+      var url = "http://localhost:8000";
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
 
-    console.log('created main app')
-   }
+    console.log("created main app");
+  }
 }

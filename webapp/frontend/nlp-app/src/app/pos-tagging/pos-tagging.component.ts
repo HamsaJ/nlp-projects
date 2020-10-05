@@ -14,7 +14,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 })
 export class PosTaggingComponent implements OnInit {
   ngOnInit() {}
-  endpoint = "http://localhost:8000/api/pos";
+  endpoint = "http://localhost:8000/nlp/pos";
   headers = { "Content-Type": "application/json" };
   data: any;
   result: any;
@@ -41,11 +41,11 @@ export class PosTaggingComponent implements OnInit {
 
   sendText() {
     console.log("sending request", {
-      data: this.data.trim(),
+      text: this.data.trim(),
     });
     this.httpClient
       .post(this.endpoint, {
-        data: this.data,
+        text: this.data,
       })
       .subscribe((result: any[]) => {
         if (result.length !== 0) {

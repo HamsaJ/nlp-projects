@@ -14,7 +14,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 })
 export class SentimentAnalysisComponent implements OnInit {
   ngOnInit() {}
-  endpoint = "http://localhost:8000/api/sentan";
+  endpoint = "http://localhost:8000/nlp/sentanalysis";
   headers = { "Content-Type": "application/json" };
   data: any;
   result: any;
@@ -43,15 +43,15 @@ export class SentimentAnalysisComponent implements OnInit {
 
   sendText() {
     console.log("sending request", {
-      data: this.data.trim(),
+      text: this.data.trim(),
     });
     this.httpClient
       .post(this.endpoint, {
-        data: this.data,
+        text: this.data,
       })
       .subscribe((result: any[]) => {
         if (result.length !== 0) {
-          this.result = Array.from(result["response"]["body"]["sentAnalysis"]);
+          this.result = Array.from(result["sentanalysis"]);
 
           if (this.result[0]["label"] === "POSITIVE") {
             console.log("LABEL IS POSITIVE");
