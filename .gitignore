@@ -255,3 +255,4 @@ dist
 .pnp.*
 
 models
+.DS_Store

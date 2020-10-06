@@ -4,19 +4,17 @@ from spacy.lang.en import English
 nlp = spacy.load(
     "/Users/jama/development/miniconda3/envs/nlp/lib/python3.8/site-packages/en_core_web_lg/en_core_web_lg-2.3.1"
 )
+import shutil
+from pathlib import Path
+from tempfile import NamedTemporaryFile
+from typing import Callable
+
+from fastapi import UploadFile
+import os
 import numpy as np
-import gensim.downloader as api
-from gensim.models import TfidfModel
-from gensim.similarities import SparseTermSimilarityMatrix
-from gensim.similarities import SoftCosineSimilarity
-from gensim.corpora import Dictionary
-from gensim.models import WordEmbeddingSimilarityIndex
+from .docsim import DocSim
 
-# Download and/or load the GloVe word vector embeddings
-
-if "glove" not in locals():  # only load if not already in memory
-    glove = api.load("glove-wiki-gigaword-50")
-
+docsim_obj = docsim.DocSim(verbose=True)
 
 from transformers import pipeline
 
@@ -25,16 +23,6 @@ def get_sentiment_analysis(text):
     # Text classification - sentiment analysis
     nlp = pipeline("sentiment-analysis")
     return nlp(text)
-
-
-import shutil
-from pathlib import Path
-from tempfile import NamedTemporaryFile
-from typing import Callable
-
-from fastapi import UploadFile
-import os
-from re import sub
 
 
 async def save_upload_file(upload_file: UploadFile, destination: str, id=-1) -> None:
@@ -111,17 +99,14 @@ def get_cvranks_for_job(directory):
             cv_text = f.read()
             cv_text_list.append(cv_text)
 
-    # Preprocess the CVs, including the job application
-    corpus = [preprocess(document) for document in cv_text_list]
-    job_list = preprocess(job_text)
-
-    cosine_sim_score = get_cosine_similarity_score(job_list, corpus)
-
-    sorted_indexes = np.argsort(cosine_sim_score)[::-1]
+    cosine_sim_score = docsim_obj.similarity_query(job_text, cv_text_list)
 
     result = list()
-    for idx in sorted_indexes[:15]:
-        result.append({"cv": titles[idx], "score": cosine_sim_score[idx].item()})
+
+    for idx, score in sorted(
+        enumerate(cosine_sim_score), reverse=True, key=lambda x: x[1]
+    ):
+        result.append({"cv": titles[idx], "score": f"{score:0.3f}"})
 
     return (job_listing_name, result)
 

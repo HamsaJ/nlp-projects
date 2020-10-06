@@ -1,0 +1,102 @@
+D A N I E L  GA N
+
+Front End Developer
+
+NEW YORK, 10005, USA
+
+890-555-0401
+
+D E TA ILS
+
+P RO F I L E
+
+9 Wall St, New York, 10005, USA
+
+890-555-0401
+
+resume@example.com
+
+DATE / PLACE OF BIRTH
+
+1989/20/03
+
+New York
+
+NATIONALITY
+
+USA
+
+Full
+
+DRIVING LICENSE
+
+SK ILLS
+
+HTML, CSS, JavaScript
+
+React, Redux, Angular, JQuery
+
+Adobe Photoshop
+
+Clear communication
+
+Highly organized
+
+Innovative problem-solving
+
+Attention to detail
+
+Innovative Front End Developer with 5 years experience building and maintaining responsive
+websites in the recruiting industry. Proficient in HTML, CSS, JavaScript; plus modern libraries and
+frameworks. Passionate about usability and possess working knowledge of Adobe Photoshop.  
+
+E MP L O Y ME N T  H I S T O RY
+
+Front End Developer at TEKsystems, New York
+
+October 2016 – Present
+
+TEKsystems is a leading IT staﬀing, IT talent management and IT services firm. As the Front End
+Developer, my core activities include: 
+
+Creating new features, functionality and capabilities on the eCommerce sites using Java,
+Ajax, SAS, and JSON. 
+Recommending solutions for a streamlined, user-friendly interface with the design team. 
+Performing bug fixes and code reviews. Technical debt reduced by 32% within first month. 
+Designing and implementing HTML email templates and newsletters for marketing
+campaigns.
+Consulting with 508 Compliance professionals during development of new websites to
+ensure accessibility. 
+Ensuring proper documentation and reports in all stages of product life cycles. 
+
+Front End Developer at Infinity Consulting Solutions, New York
+
+July 2013 – October 2015
+
+Infinity Consulting Solutions is a staﬀing and recruiting agency. As the Front End Developer, my
+core activities included: 
+
+Building stable and maintainable codebases using React.
+Implementing a mobile-first approach to existing websites.
+Collaborating with designers to ensure designs were eﬀicient and technically sound. 
+Creating modular, responsive templates using modern CSS techniques and JavaScript
+libraries.
+Working directly with client stakeholders to develop technical solutions for business cases.
+Assisting with the transition from a waterfall method to the more eﬀicient Agile
+methodology. 
+Leveraging responsive web frameworks to complete deliverables ahead of schedule.
+Conducting A/B testing to identify bugs and UI improvements. 
+
+E D U CA T I O N
+
+New York University
+
+2010
+
+CO U RS E S
+
+Degree: Bachelor's Degree in Computer Science
+
+Principles of UX and Usability, Interaction Design Foundation
+
+May 2011 – June 2011

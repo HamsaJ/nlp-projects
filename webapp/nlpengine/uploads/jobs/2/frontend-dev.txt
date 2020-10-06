@@ -1,0 +1,28 @@
+
+Company: M-XR
+Role: Mid-Level Front-End Developer (JavaScript, CSS, React, HTML)
+Salary: £50,000 - £60,000 a year
+Job type: Full-time, Permanent
+##
+My client is looking add a talented Mid-Level Front-End Developer (JavaScript, CSS, React, HTML) to their modern web team in a passionate and challenging environment, within a company that strives for excellence.
+
+The Mid-Level Front-End Developer (JavaScript, CSS, React, HTML) will take the lead working on a well renowned, award winning website. Bringing your enthusiasm and experience with large scale development, the Mid-Level Front-End Developer (JavaScript, CSS, React, HTML) will be using a variety of JavaScript-based technologies to evolve the platform and provide real business benefit.
+
+Responsibilities for the Mid-Level Front-End Developer (JavaScript, CSS, React, HTML):
+
+    You will be expected to work with other developers with varying levels of experience
+    As a Mid-Level developer, you will be working with other teams in an Agile environment learning the needs of the business to ensure the best user experience possible.
+    A successful candidate will have an eye for detail, and a good understanding of best practices, as well as experience in testing, visualization, design, and an ability to choose the best tool for the job.
+    You will show good timekeeping, excellent collaborative skills, a desire to grow their skillsets
+
+Vital requirements for the Mid-Level Front-End Developer (JavaScript, CSS, React, HTML):
+
+    Good JavaScript ability
+    Good HTML/CSS ability
+    A passion for delivering excellent quality
+
+Desired requirements for the Mid-Level Front-End Developer (JavaScript, CSS, React, HTML):
+
+    Working knowledge of a CSS pre-processor, i.e. SASS
+    Knowledge of React
+    Experience with google analytics

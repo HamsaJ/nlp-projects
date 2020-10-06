@@ -1,0 +1,65 @@
+
+
+Hank Applicant
+
+123 ABC Street • Seattle, WA 99999 • (555) 555-5555 • hank.applicant@email.com
+
+FRONT-END WEB DEVELOPER
+
+Translating designs to front-end code and determining developer requirements
+
+Respected Front-End Web Developer with 10-plus years of experience in collaborating with creative and development teams on the execution of ideas and projects.
+
+Key skills include:
+
+● Promoting and communicating new ideas
+
+● Creating process improvements
+
+● Instituting new technologies
+
+● Writing maintainable cross-browser code
+
+● Estimating time and costs for projects
+
+● Ensuring code is scalable and responsive
+
+PROFESSIONAL EXPERIENCE
+
+SCOTTIE TECH COMPANY, Seattle, WA
+
+FRONT-END WEB DEVELOPER (February 2013 – Present)
+
+Translate designs to front-end code, estimate project time and costs, determine developer requirements and specifications, and work with cross-functional team to define and develop product roadmaps.
+
+Notable accomplishments:
+
+● Increased scalability, maintainability, and responsiveness of cross-browser code by 47%.
+
+● Implemented process improvement that doubled system speed within two years.
+
+MALCOLM TECHNOLOGY, Seattle, WA
+
+FRONT-END WEB DEVELOPER (June 2008 – February 2013)
+
+Updated and streamlined existing code to improve site performance for entire company.
+
+Notable Accomplishments:
+
+● Utilized cutting-edge JavaScript and HTML 5 techniques, frameworks, and libraries.
+
+● Wrote support documentation and provided training to internal and external users.
+
+EDUCATION & CREDENTIALS
+
+ABC COMMUNITY COLLEGE, Seattle, WA
+
+Associate of Science in Computer Science (Emphasis: Web Development, Code Writing), 2008
+
+Certifications
+
+Hyper Text Markup Language (HTML) and CSS Certified • National Code Writing Alliance (NCWA)
+
+Information Technology Skills
+
+    Git • WordPress • JavaScript • iOS • Android
