@@ -5,11 +5,11 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root",
 })
 export class UploadService {
-  SERVER_URL: string = "http://localhost:5000/upload";
+  SERVER_URL: string = "http://localhost:8000/files/uploadone";
   constructor(private httpClient: HttpClient) {}
 
   public upload(formData) {
-    console.log(formData);
+    //console.log(formData);
 
     return this.httpClient.post<any>(this.SERVER_URL, formData, {
       reportProgress: true,

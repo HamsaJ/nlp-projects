@@ -16,7 +16,7 @@ export class CvRankingComponent implements OnInit {
 
   uploadFile(file) {
     const formData = new FormData();
-    formData.append("file", file.data);
+    formData.append("file", file.file);
     file.inProgress = true;
     this.uploadService
       .upload(formData)
@@ -32,7 +32,7 @@ export class CvRankingComponent implements OnInit {
         }),
         catchError((error: HttpErrorResponse) => {
           file.inProgress = false;
-          return of(`${file.data.name} upload failed.`);
+          return of(`${file.name} upload failed.`);
         })
       )
       .subscribe((event: any) => {
@@ -48,16 +48,18 @@ export class CvRankingComponent implements OnInit {
       this.uploadFile(file);
     });
   }
+
   onClick() {
     const fileUpload = this.fileUpload.nativeElement;
     fileUpload.onchange = () => {
       for (let index = 0; index < fileUpload.files.length; index++) {
         const file = fileUpload.files[index];
-        this.files.push({ data: file, inProgress: false, progress: 0 });
+        this.files.push({ file, inProgress: false, progress: 0 });
       }
       this.uploadFiles();
     };
     fileUpload.click();
   }
+
   ngOnInit(): void {}
 }

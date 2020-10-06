@@ -1,0 +1,74 @@
+
+Company: M-XR
+Role: Lead Engineer: Electro Mechanical & Optics
+Salary: £43,000 - £60,000 a year
+Job type: Full-time, Permanent
+##
+Company description
+M—XR was founded in 2018 with a mission of bringing the infinite world of 3D to the masses. Our passionate team is focused on developing best in class tools to allow brands, studios, and creators the ability to create high-quality 3D content at ease. We are best known for our developments in 3D capture, and our ability to create compelling experiences with the assets we capture through R&D lead exploration. Curiosity and creativity are at the heart of M—XR, we feel strongly that asking questions and looking at problems from new perspectives is key to pushing the envelope for what is possible. We are looking for skilled individuals who share this passionate curiosity, question the norm, and willingness to explore something new. If you are an engineer, developer, or creative that shares passion about shaping the future of 3D we would love to hear from you.
+
+Job description
+
+M—XR is expanding it’s R&D team to complete the development of their unique 3D capture system. The team will be split into software development and hardware development. The hardware development team will focus on the physical creation of the 3D scanner by expanding upon M—XR’s already established research, to optically capture a subject's 3D form and material information. The software team will develop the relevant procedures, including cloud network architecture, to process the collected data into a 3D form, and use machine learning to identify the relevant material properties.
+
+We are looking for a candidate who is not only scientifically minded, with the correct knowledge of the subject matter, but also holds the necessary practical skills to carry out the task at hand.
+
+You will be responsible for the design and manufacturing of the M—XR capture-system’s physical rigging, optics, and electronic components. You will be working closely with the CTO to understand the science and methodology behind M-XR’s bespoke material capture approach, improve upon the findings, and progress the system’s capabilities.
+
+A strong understanding of light and optics; such as microscopy and/or astronomical imaging will, therefore, be necessary for conducting the relevant R&D for material acquisition and 3D scanning — BRDF & BTDF functions. Previous experience in 3D scanning techniques such as photogrammetry, structured light, LIDAR, and Laser-Pulse will be beneficial.
+
+The role will see you developing the first iteration rudimental capture rig for testing and exploring of the principle science, right through to a working alpha system ready for industry tests, with our selected partners. An individual who is highly competent in fast prototyping will be crucial to the early stages of exploration within the first parts of the project. You will be working with hardware such as; camera components, different light emitters, servos, and actuators, as well as compute components; GPU’s, Motherboards, and high-speed storage and interfacing.
+
+The ideal candidate will be a self-lead individual who is able to use creativity to explore new ideas and concepts, in order to overcome challenges in the creation of hardware and identifying new processes.
+
+Please attach your CV and a cover letter, detailing why your past experience will make you suitable for the role and how you personally will be a key contributor to the team.
+
+RESPONSIBILITIES
+
+    Ensure that the project is tracking correctly through communication with department heads & delegating new tasks.
+    Budget Management.
+    Develop and implement a schedule of project activities and key milestones to achieve the project objectives.
+    Manage risks, issues and changes on the project.
+    Experience with running software development and the appropriate workflows such as agile.
+    Able to set up a process flow, monitoring and planning tool for all activities, using existing mechanisms as a basis, but striving to improve and drive efficiencies for all.
+    Experience running R&D based projects, able to adapt and form new plans and task assignments upon changes in developments.
+
+REQUIREMENTS
+
+    Workshop experience in resistant materials and electronics.
+    Degree in Engineering, Robotics or similar field.
+    Knowledge of Microscopy and/or Astronomy techniques from an imaging perspective.
+    Knowledge surrounding the physics of light, optics, and material science.
+    An understanding of lightfield capture and display.
+    Previous experience in R&D product development roles.
+    Excellent knowledge of CAD / CAM software packages.
+    Well-Versed in python.
+    A strong understanding of digital imaging.
+    Previous experience working with computing components and optimization.
+    Well-Versed in applied physics and mechanics.
+
+www.m-xr.com
+
+Job Types: Full-time, Permanent
+
+Salary: £43,000.00-£60,000.00 per year
+
+Benefits:
+
+    On-site Parking
+
+Schedule:
+
+    Monday to Friday
+
+Experience:
+
+    hardware development: 6 years (Required)
+
+Education:
+
+    Bachelor's (Required)
+
+Work remotely:
+
+    No

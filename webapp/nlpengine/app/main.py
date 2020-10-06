@@ -4,7 +4,7 @@ load_dotenv(verbose=True)
 
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import nlp
+from .routers import nlp, files, jobs
 
 app = FastAPI()
 origins = [
@@ -27,3 +27,5 @@ async def get_token_header(x_token: str = Header(...)):
 
 
 app.include_router(nlp.router)
+app.include_router(files.router)
+app.include_router(jobs.router)
