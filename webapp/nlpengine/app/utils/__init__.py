@@ -98,11 +98,13 @@ def get_job_and_cvs(directory):
 def get_cvranks_for_job(directory):
     path = Path(directory)
     job_listing = [x for x in path.iterdir() if x.is_file()][0]
+    job_listing_name = [x for x in path.iterdir() if x.is_file()][0].name
+
     with job_listing.open() as f:
         job_text = f.read()
 
-    cv_list = [x for x in list(path.glob("**/*.txt"))]
-    titles = [x.name for x in list(path.glob("**/*.txt"))]
+    cv_list = [x for x in list(path.glob("cv/*.txt"))]
+    titles = [x.name for x in cv_list]
     cv_text_list = list()
     for cv in cv_list:
         with cv.open() as f:
@@ -121,7 +123,7 @@ def get_cvranks_for_job(directory):
     for idx in sorted_indexes[:15]:
         result.append({"cv": titles[idx], "score": cosine_sim_score[idx].item()})
 
-    return (job_listing, result)
+    return (job_listing_name, result)
 
 
 def get_cosine_similarity_score(job_list, corpus):
