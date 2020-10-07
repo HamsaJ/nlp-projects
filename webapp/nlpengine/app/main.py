@@ -6,7 +6,7 @@ from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from .routers import nlp, files, jobs
 
-app = FastAPI()
+app = FastAPI(title="Hitech ML Lab", version="0.1.0")
 origins = [
     "http://localhost",
     "http://localhost:4200",

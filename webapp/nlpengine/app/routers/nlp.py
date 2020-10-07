@@ -1,7 +1,8 @@
 from fastapi import APIRouter
 from textacy import preprocessing
-from ..utils import get_sentiment_analysis, nlp
+from ..utils import get_sentiment_analysis, nlp, DocumentReader
 
+reader = DocumentReader()
 router = APIRouter()
 
 from pydantic import BaseModel
@@ -80,7 +81,7 @@ async def nlp_postag(data: Data):
 
 
 @router.post("/nlp/sentanalysis", tags=["nlp"])
-async def nlp_postag(data: Data):
+async def nlp_sentiment_analysis(data: Data):
     result = get_sentiment_analysis(data.text)
     return {"sentanalysis": result}
 
@@ -111,4 +112,13 @@ async def nlp_dependency(data: Data):
         for token in doc
     ]
     result = {"dependency": dependency}
+    return result
+
+
+@router.post("/nlp/questionanswer", tags=["nlp"])
+async def nlp_question_and_answer(question: str, context: str):
+
+    reader.tokenize(question, context)
+
+    result = {"answer": reader.get_answer()}
     return result
