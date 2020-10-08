@@ -4,7 +4,7 @@ load_dotenv(verbose=True)
 
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import nlp, files, jobs
+from .routers import nlp, files, jobs, chat
 
 app = FastAPI(title="Hitech ML Lab", version="0.1.0")
 origins = [
@@ -29,3 +29,4 @@ async def get_token_header(x_token: str = Header(...)):
 app.include_router(nlp.router)
 app.include_router(files.router)
 app.include_router(jobs.router)
+# app.include_router(chat.router)
