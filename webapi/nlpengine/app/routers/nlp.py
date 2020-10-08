@@ -1,6 +1,11 @@
 from fastapi import APIRouter
-from textacy import preprocessing
-from ..utils import get_sentiment_analysis, nlp, DocumentReader
+from ..utils import (
+    get_sentiment_analysis,
+    nlp,
+    DocumentReader,
+    normalize_whitespace,
+    normalize_unicode,
+)
 
 reader = DocumentReader()
 router = APIRouter()
@@ -95,8 +100,8 @@ async def nlp_dependency(data: Data):
     is False, the default sentence iterator will raise an exception.
     """
 
-    result = preprocessing.normalize_whitespace(data.text)
-    result = preprocessing.normalize_unicode(result, form="NFC")
+    result = normalize_whitespace(data.text)
+    result = normalize_unicode(result, form="NFC")
     doc = nlp(result)
 
     dependency = [
